@@ -41,3 +41,8 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+/backend/runtime/
+/backend/web/assets/
+/frontend/web/assets/
+/frontend/runtime/
+/console/runtime/
