@@ -148,7 +148,7 @@ class JomashopController extends Controller {
 
                     $item->updateTime = time();
                     $item->update(false);
-                } catch (\InvalidArgumentException $ex) {
+                } catch (\Exception $ex) {
                     echo $ex->getMessage() . "\n";
                 }
             }
