@@ -78,7 +78,7 @@ class JomashopController extends Controller {
         Yii::$app->cache->set('joma_detail_running', 'true');
 
         try {
-            $items = Item::findBySql("SELECT * FROM items WHERE isActive = true AND sourceId ='jomashop' AND listTime >= " . ( time() - (72 * 3600)) . " ORDER BY updateTime, listTime limit 1000")->all();
+            $items = Item::findBySql("SELECT * FROM items WHERE isActive = true AND sourceId ='jomashop' AND listTime >= " . ( time() - (72 * 3600)) . " ORDER BY updateTime, listTime")->all();
 
             foreach ($items as $item) {
                 try {
