@@ -73,9 +73,9 @@ class Image extends \yii\db\ActiveRecord {
 
     public static function get($imageId) {
         $config = [
-            'serverUrls' => ['http://donghohieu.org/'],
-            'publicKey' => 'joma',
-            'privateKey' => '@jomas3cret',
+            'serverUrls' => ['http://image.donghohieu.org/'],
+            'publicKey' => 'jomashop',
+            'privateKey' => 'fuck@jomashop@s3cr3t',
         ];
         $client = ImboClient::factory($config);
         return $client->getImageUrl($imageId);
