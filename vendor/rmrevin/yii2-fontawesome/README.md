@@ -18,7 +18,7 @@ Add in `composer.json`:
 ```
 {
     "require": {
-        "rmrevin/yii2-fontawesome": "2.5.0"
+        "rmrevin/yii2-fontawesome": "2.7.*"
     }
 }
 ```
@@ -103,4 +103,11 @@ echo FA::stack(['data-role' => 'stacked-icon'])
 //   <i class="fa fa-square-o fa-inverse fa-stack-2x"></i>
 //   <i class="fa fa-cog fa-spin fa-stack-1x"></i>
 // </span>
+
+// autocomplete in IDE
+echo FA::icon(FA::_COG);
+echo FA::icon(FA::_DESKTOP);
+echo FA::stack(['data-role' => 'stacked-icon'])
+     ->on((new FA\Icon(FA::_SQUARE))->inverse())
+     ->icon((new FA\Icon(FA::_COG))->spin());
 ```

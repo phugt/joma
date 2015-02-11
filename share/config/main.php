@@ -5,9 +5,9 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=joma.vn;dbname=joma',
+            'dsn' => 'mysql:host=donghohieu.org;dbname=joma',
             'username' => 'root',
-            'password' => 'matkhau',
+            'password' => 'Deoaibiet',
             'charset' => 'utf8',
         ],
         'mailer' => [
