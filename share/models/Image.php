@@ -54,9 +54,9 @@ class Image extends \yii\db\ActiveRecord {
 
     public static function download($url, $targetType, $targetId, $position = 0) {
         $config = [
-            'serverUrls' => ['http://donghohieu.org/'],
-            'publicKey' => 'joma',
-            'privateKey' => '@jomas3cret',
+            'serverUrls' => ['http://image.donghohieu.org/'],
+            'publicKey' => 'jomashop',
+            'privateKey' => 'fuck@jomashop@s3cr3t',
         ];
         $client = ImboClient::factory($config);
         $resp = $client->addImageFromUrl($url);
